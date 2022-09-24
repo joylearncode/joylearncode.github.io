@@ -1,0 +1,179 @@
+/* 一定要做的設定 */
+*{
+    /* 讓畫面上的所有元素以邊框計算大小 */
+    box-sizing: border-box;
+    /* 設定完成後再註解起來 */
+    /* border: 1px solid black; */
+    /* 只要內容放不下就換行 */
+    flex-wrap: wrap;
+}
+
+
+.nav_bar {
+    display: flex;
+    height: 35px;
+}
+
+.nav_title {
+    flex: none;
+    font-size: 20px;
+    font-weight: bold;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.nav_right {
+    display: flex;
+    justify-content: flex-end;
+    flex: auto;
+
+
+}
+
+.nav_item {
+    font-size: 20px;
+    flex: none;
+    margin-right: 10px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: block;
+}
+
+/* 漢堡包 */
+.mobile_menu {
+    display: none;
+}
+
+/* 主標題 */
+
+header{
+    background-color: #CCEFFF;color:rgb(0, 0, 0);font-weight:bold;font-size:40px;
+    text-align:center; padding: 80px;
+    height: 300px;
+}
+
+/* 主內容設定 */
+
+main{
+    display: flex; flex-wrap: wrap;
+    justify-content: center;
+}
+
+main>.card{
+    flex: none;
+
+}
+
+.container_card {
+    width: 1200px;
+    margin: 0 auto;
+
+}
+
+/* promotion */
+
+.promote_container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: flex-start;
+    background-color: #CCEFFF;
+
+}
+
+.promote {
+    display: flex;
+    width: 50%;
+    font-size: 20px;
+    align-items: center;
+
+}
+
+.promote_image {
+    width: 80px;
+    height: 100%;
+    height: 50px;
+    justify-content: left;
+
+}
+
+.promote_text {
+    justify-content: center;
+    font-size: 20px;
+    margin: 5px;
+}
+
+/* 照片 */
+
+.photo_area {
+    display: flex;
+    justify-content: center;
+}
+
+.photo_body {
+    flex: none;
+    width: 25%;
+    padding: 5px;
+}
+
+.photo {
+    width: 100%;
+
+}
+
+.phtot_text {
+    padding: 0px 5px;
+    background-color: azure;
+}
+
+.photo_title {
+    font-size: 20px;
+    text-align: center;
+    background-color: #CCEFFF;
+
+}
+
+
+
+/* 螢幕解析度小於1200px */
+@media (max-width:1200px) {
+
+    .promote_container {
+        flex-wrap: wrap;
+    }
+
+    .promote {
+        width: 45%;
+    }
+
+    .photo_area {
+        flex-wrap: wrap;
+    }
+
+    .photo_body {
+        width: 45%;
+
+    }
+
+
+}
+
+/* 螢幕解析度小於600px */
+@media (max-width:600px) {
+
+    .photo_body {
+        width: 90%;
+
+    }
+
+    .nav_item {
+        display: none;
+    }
+
+    .mobile_menu {
+        display: block;
+    }
+
+}
