@@ -8,10 +8,14 @@
     flex-wrap: wrap;
 }
 
+body{
+margin: 0%;
+}
 
 .nav_bar {
     display: flex;
     height: 35px;
+    margin: 8px;
 }
 
 .nav_title {
@@ -124,7 +128,9 @@ main {
 .photo_body {
     flex: none;
     width: 25%;
-    padding: 5px;
+    background-color: #CCEFFF;
+    border: 5px solid white;
+
 }
 
 .photo {
@@ -134,7 +140,6 @@ main {
 
 .phtot_text {
     padding: 0px 5px;
-    background-color: azure;
 }
 
 .photo_title {
