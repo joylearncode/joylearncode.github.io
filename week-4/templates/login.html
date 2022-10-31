@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Log In</title>
+  <style>
+    header {
+      height: 200px;
+      background-color: #234;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    header h1 {
+      color: white;
+      font-size: 40px;
+    }
+
+    form {
+      justify-content: center;
+      align-items: center;
+      display: grid
+    }
+
+    form h2 {
+      margin-top: 50px;
+      margin-bottom: 30px;
+    }
+
+    .ID {
+      font-size: 20px;
+      margin: 10px;
+    }
+
+    .password {
+      font-size: 20px;
+      margin: 10px;
+    }
+
+    form.input {
+      margin: 10px;
+    }
+
+    .submit {
+      display: grid;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .submit input {
+      padding: 10px;
+      border: 0;
+      background-color: #234;
+      color: #fff;
+      border-radius: 2px;
+      cursor: pointer;
+    }
+
+    body h2 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 30px;
+      margin: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>歡迎光臨，請輸入帳號密碼</h1>
+  </header>
+  <form action="" method="post">
+    <h2 class="formtitle">登入系統</h2>
+    <div class="ID">
+      帳號 <input type="text" placeholder="Username" name="username" value="{{
+          request.form.username }}">
+    </div>
+    <div class="password">
+      密碼 <input type="password" placeholder="Password" name="password" value="{{
+          request.form.password }}">
+    </div>
+    <div class="submit">
+      <input class="btn btn-default" type="submit" value="登入">
+    </div>
+  </form>
+  {% if error %}
+  <p class="error"><strong>Error:</strong> {{ error }}
+    {% endif %}
+    </div>
+</body>
+
+</html>
