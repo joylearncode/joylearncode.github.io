@@ -47,8 +47,10 @@ insert into message(member_id,content,like_count) values (5, 'we help', 60);
 insert into message(member_id,content,like_count) values (1, '2nd commit', 5);
 
 select*from member inner join message on member.id=message.member_id;
-select member.id,member.name,member.username,message.content,message.like_count from member inner join message on member.id=message.member_id;
-select*from member inner join message on member.id=message.member_id where member.username='test';
+select member.id,member.name,member.username,message.content,message.like_count 
+from member inner join message on member.id=message.member_id;
+select member.id,member.name,member.username,message.content,message.like_count 
+from member inner join message on member.id=message.member_id where member.username='test';
 select username,like_count from member inner join message on member.id=message.member_id;
 select username,avg(like_count) total
 from member inner join message on member.id=message.member_id
