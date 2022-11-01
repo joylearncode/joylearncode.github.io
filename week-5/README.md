@@ -20,9 +20,9 @@
 
 ![Untitled](./Week-5%20MySQL/Untitled%203.png)
 
-- 使⽤ UPDATE 指令更新欄位 username 是 test 的會員資料，將資料中的 name 欄位改成 test2。
+ - <font color=#FF6600>使⽤ UPDATE 指令更新欄位 username 是 test 的會員資料，將資料中的 name 欄位改成 test2。</font>
 
-![Untitled](./Week-5%20MySQL/Untitled%204.png)
+![Untitled](./Week-5%20MySQL/Untitled%2011.png)
 
 ## 要求四:
 
