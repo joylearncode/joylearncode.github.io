@@ -3,54 +3,30 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-
-  <title>Frontend Mentor | Product preview card component</title>
+  <title>Product card component</title>
   <link rel="stylesheet" href="./style/style.css">
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style> -->
 </head>
 
 <body>
   <main>
-    <div class="try">
-      <div class="img">
-        <img src="./images/image-product-desktop.jpg" alt="perfume">
-      </div>
+    <div class="card">
+      <img src="./images/image-product-desktop.jpg" alt="perfume" class="card-image"
+        style="max-width:100%; height: auto;">
+      <div class="description">
+        <h1>Perfume</h1>
+        <h2>Gabrielle Essence Eau De Parfum</h2>
+        <p>A floral, solar and voluptuous interpretation composed by Olivier Polge,
+          Perfumer-Creator for the House of CHANEL.</p>
+        <h3><span class="sale-price">$149.99</span><span class="price">169.99</span></h3>
 
-      <div class="container">
-        <div class="perfume">
-          Perfume
-        </div>
-        <div class="title">
-          <h1>Gabrielle Essence Eau De Parfum</h1>
-        </div>
-        <div class="text">
-          <p>A floral, solar and voluptuous interpretation composed by Olivier Polge,
-            Perfumer-Creator for the House of CHANEL.</p>
-        </div>
-        <div class="price">
-          <div class="green">$149.99</div>
-          <div class="original">
-            $169.99
-          </div>
-        </div>
-        <button>Add to Cart</button>
-
+        <button> <img src="./images/icon-cart.svg" alt="Cart" class="cart"> Add to Cart</button>
       </div>
     </div>
   </main>
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+
+
 </body>
 
 </html>
