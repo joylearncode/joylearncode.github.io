@@ -1,0 +1,46 @@
+*{
+    box-sizing: border-box;
+    flex-wrap: wrap
+}
+
+body{
+    background-color: hsl(30, 38%, 92%);
+}
+
+// main{
+// //     display: flex;
+// //     justify-content: center;
+// //     align-items: center;
+// // }
+
+.try{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    
+}
+
+img{
+    width:50%;
+
+}
+
+.container{
+    width:50%;
+}
+
+.perfume{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.title{
+    font-family: 'Fraunces', serif;
+}
+
+.text{
+    font-family: 'Montserrat', sans-serif;
+    P{
+        font-size: 14px;
+    }
+}
