@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz@9..144&family=Prosto+One&display=swap");
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(217, 54%, 11%);
+    display: grid;
+    place-content: center;
+}
+
+.card {
+    background-color: hsl(216, 50%, 16%);
+    height: 600px;
+    width: 350px;
+    border-radius: 15px;
+}
+
+.card-image {
+    display: flex;
+    width: 300px;
+    border-radius: 15px;
+    justify-content: center;
+    margin: 25px;
+}
+
+h1 {
+    font-size: 24px;
+    font-family: 'Outfit', sans-serif;
+    color: white;
+    padding-left: 25px;
+}
+p{
+    font-size: 18px;
+    font-family: 'Outfit', sans-serif;
+    color: hsl(215, 51%, 70%);
+    padding-left: 25px;
+}
+
+.info{
+    padding-left: 25px;
+    display: flex;
+    flex: 1 1 1 1;
+}
+
+
+h3{
+    font-size: 18px;
+    font-family: 'Outfit', sans-serif;
+    color:hsl(178, 100%, 50%) ;
+}
+
+h4{
+    font-size: 18px;
+    font-family: 'Outfit', sans-serif;
+    color: hsl(215, 51%, 70%);
+    margin: 10px;
+}
+
+.author{
+    width: 35px;
+    border: 1px solid white;
+    border-radius: 50% ;
+}
+
+.border-line{
+    display: flex;
+    padding-left: 25px;
+    margin-top: 20px;
+
+}
+
+h5{
+    font-family: 'Outfit', sans-serif;
+    color: hsl(215, 51%, 70%);
+    margin: 10px;
+}
+
+span{
+    font-family: 'Outfit', sans-serif;
+    color: white;
+}
+
+hr.style-one {
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0,0,0,0.1);
+    border-bottom: 1px solid rgba(255,255,255,0.3);
+    padding-left: 25px;
+    padding-right: 25px;
+}
